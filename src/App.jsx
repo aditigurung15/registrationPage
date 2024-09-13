@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import './App.css'
 
 const Registration = () => {
 
@@ -31,7 +32,7 @@ const Registration = () => {
     }
 
   return (
-<div>
+<div className='container'>
 {isloggedIn?(<div><h2>Welcome {email}</h2> <button onClick={handlelogout}>Log out</button></div>)
 
 :
